@@ -17,7 +17,7 @@ const projectList: Project[] = [
         id: 1, 
         title: "Personalized Product Recommendation System", 
         description: "A recommendation system built with collaborative filtering using the Amazon Fine Food Reviews dataset.",
-        image: "/images/project1.jpg",
+        image: "/images/project1.webp",
         technologies: ["Python", "Collaborative Filtering", "Pandas", "NumPy", "Scikit-Learn"]
     },
     { 
@@ -31,7 +31,7 @@ const projectList: Project[] = [
         id: 3, 
         title: "Data Analysis Pipeline", 
         description: "End-to-end data pipeline for analyzing healthcare datasets.",
-        image: "/images/project3.jpg",
+        image: "/images/project3.png",
         technologies: ["Python", "ETL", "SQL", "Data Visualization", "Pandas"]
     }
 ];

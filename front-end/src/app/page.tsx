@@ -8,8 +8,8 @@ import { motion } from 'framer-motion';
 import Projects from './components/Projects';
 import DownloadResume from './components/DownloadResume';
 import Navbar from './components/Navbar';
-// import ParticlesBG from './components/ParticlesBG';
-import CanvasBG from './components/CanvasBG'
+import CanvasBG from './components/CanvasBG';
+import FeedbackForm from './components/FeedbackForm';
 
 const Home: React.FC = () => {
     return (
@@ -35,10 +35,16 @@ const Home: React.FC = () => {
                 </motion.div>
             </section>
 
-            {/* Scrollable Area - Projects */}
+            {/* Projects */}
             <section id="projects" className="p-8">
                 <h2 className="text-4xl font-bold mb-6 text-center">Projects</h2>
                 <Projects />
+            </section>
+
+            {/* Feedback */}
+            <section id='feedback' className="p-8">
+                <h2 className="text-4xl font-bold mb-6 text-center">Contact US</h2>
+                <FeedbackForm />
             </section>
         </div>
     );
