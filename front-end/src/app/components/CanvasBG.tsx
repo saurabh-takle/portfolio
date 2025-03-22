@@ -4,6 +4,24 @@
 
 import React, { useEffect, useRef } from 'react';
 
+interface BoxType {
+    half_size: number;
+    x: number;
+    y: number;
+    r: number;
+    shadow_length: number;
+    color: string;
+    rotate: () => void;
+    draw: () => void;
+    drawShadow: () => void;
+    getDots: () => {
+        p1: { x: number; y: number };
+        p2: { x: number; y: number };
+        p3: { x: number; y: number };
+        p4: { x: number; y: number };
+    };
+}
+
 const CanvasBG: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
@@ -19,7 +37,7 @@ const CanvasBG: React.FC = () => {
         };
         
         const colors = ["#f5c156", "#e6616b", "#5cd3ad"];
-        const boxes: any[] = [];
+        const boxes: BoxType[] = [];
 
         function resize() {
             const box = canvas.getBoundingClientRect();
@@ -29,7 +47,7 @@ const CanvasBG: React.FC = () => {
             // light.y = box.height / 2;
         }
 
-        class Box {
+        class Box implements BoxType {
             half_size = Math.floor((Math.random() * 50) + 1);
             x = Math.floor((Math.random() * canvas.width) + 1);
             y = Math.floor((Math.random() * canvas.height) + 1);

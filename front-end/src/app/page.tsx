@@ -30,7 +30,7 @@ const Home: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h1 className="text-5xl font-bold mb-4">Hello, I'm Saurabh Takle</h1>
+                    <h1 className="text-5xl font-bold mb-4">Hello, I&apos;m Saurabh Takle</h1>
                     <p className="text-xl mb-8">Machine Learning | Data Engineering | Data Analysis</p>
                 </motion.div>
             </section>
