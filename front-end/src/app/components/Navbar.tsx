@@ -2,18 +2,18 @@
 
 'use client';
 
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useMemo} from 'react';
 import { motion } from 'framer-motion';
 import { Link, Events } from 'react-scroll';
 
 const Navbar: React.FC = () => {
     const [activeSection, setActiveSection] = useState<string>('home');
 
-    const links = [
+    const links = useMemo(() => ([
         { name: 'Home', href: 'home' },
         { name: 'Projects', href: 'projects' },
         { name: 'Feedback', href: 'feedback' }
-    ];
+    ]), []);
 
     useEffect(() => {
         Events.scrollEvent.register('begin', () => {});
@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
             Events.scrollEvent.remove('end');
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [links]);
 
     return (
         <motion.div

@@ -4,23 +4,34 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 interface ProjectCardProps {
     image: string;
     title: string;
     description: string;
     technologies: string[];
+    githubLink: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, description, technologies }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, description, technologies, githubLink }) => {
     return (
-        <motion.div 
+        <motion.a 
+            href={githubLink} 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="bg-gray-800 rounded-2xl overflow-hidden shadow-lg p-4 hover:scale-105 transition-transform"
             whileHover={{ scale: 1.05 }}
         >
             {/* Project Image */}
             <div className="w-full h-48 overflow-hidden rounded-xl mb-4">
-                <img src={image} alt={title} className="w-full h-full object-cover" />
+            <Image 
+                src={image} 
+                alt={title} 
+                width={500} 
+                height={500} 
+                className="w-full h-full object-cover rounded-xl"
+            />
             </div>
 
             {/* Project Title */}
@@ -37,7 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, title, description, te
                     </span>
                 ))}
             </div>
-        </motion.div>
+        </motion.a>
     );
 };
 

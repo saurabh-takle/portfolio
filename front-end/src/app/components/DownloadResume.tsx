@@ -15,7 +15,7 @@ const DownloadResume: React.FC = () => {
             className="fixed bottom-4 right-4"
         >
             <a 
-                href="/resume.pdf" 
+                href="/SaurabhTakle.pdf" 
                 download="Saurabh_Takle_Resume.pdf"
                 className="pointer-events-auto bg-transparent hover:bg-blue-600 text-white py-2 px-4 rounded-full flex items-center shadow-lg"
             >
