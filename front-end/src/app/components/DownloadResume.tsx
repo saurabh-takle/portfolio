@@ -22,7 +22,9 @@ const DownloadResume: React.FC = () => {
                 <AiOutlineDownload className="mr-2" size={20} />
                 Resume
             </a>
+            
         </motion.div>
+        
     );
 };
 

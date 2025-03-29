@@ -11,6 +11,7 @@ const Navbar: React.FC = () => {
 
     const links = useMemo(() => ([
         { name: 'Home', href: 'home' },
+        { name: 'About Me', href: 'about_me' },
         { name: 'Projects', href: 'projects' },
         { name: 'Feedback', href: 'feedback' }
     ]), []);
@@ -60,12 +61,12 @@ const Navbar: React.FC = () => {
                     spy={true}
                     offset={-100}
                     onSetActive={() => setActiveSection(link.href)}
-                    className={`relative text-sm text-white cursor-pointer py-2 px-4 transition-all duration-300 
+                    className={`relative text-sm text-[#171717] bg-[url('/brush.svg')] cursor-pointer py-2 px-4 transition-all duration-300 
                         ${activeSection === link.href ? "text-blue-500 font-bold" : "hover:text-blue-400"}`}
                 >
                     {activeSection === link.href && (
                         <motion.div
-                            className="absolute inset-0 bg-blue-500 rounded-full blur-lg opacity-60"
+                            className="absolute inset-0 bg-white rounded-full blur-lg opacity-60"
                             layoutId="activeHighlight"
                             transition={{ type: "spring", stiffness: 300, damping: 15 }}
                         />
