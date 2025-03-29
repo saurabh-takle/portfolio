@@ -17,7 +17,9 @@ const Home: React.FC = () => {
     return (
         <div className="relative min-h-screen bg-transparent text-white">
             <CanvasBG/>
-            <DownloadResume />
+            <section className="fixed z-20">
+                <DownloadResume />
+            </section>
 
             <section className="fixed z-20">
                 <Navbar />

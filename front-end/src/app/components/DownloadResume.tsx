@@ -14,14 +14,15 @@ const DownloadResume: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="fixed bottom-4 right-4"
         >
-            <a 
+            <motion.a 
                 href="/SaurabhTakle.pdf" 
                 download="Saurabh_Takle_Resume.pdf"
-                className="pointer-events-auto bg-transparent hover:bg-blue-600 text-white py-2 px-4 rounded-full flex items-center shadow-lg"
+                className="pointer-events-auto bg-[url('/brush.svg')] text-[#171717] py-2 px-4 rounded-full flex items-center"
+                whileHover={{ scale: 1.15 }}
             >
                 <AiOutlineDownload className="mr-2" size={20} />
                 Resume
-            </a>
+            </motion.a>
             
         </motion.div>
         
