@@ -32,7 +32,7 @@ const Home: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h1 className="text-5xl font-bold mb-4">Hello, I&apos;m <span className='text-[#264653] bg-[#fdf6e3] rounded-2xl'>SAURABH</span></h1>
+                    <h1 className="text-5xl font-bold mb-4">Hello, I&apos;m <span className='text-[#264653] bg-[#fdf6e3] rounded-2xl'>SAURABH TAKLE</span></h1>
                     <div className="text-xl mb-8">
                         <TypeAnimation
                             sentences={["A passionate DATA ENGINEER", "I love Turning Data into Decisions", "Machine Learning Engineer TO BE..."]}
