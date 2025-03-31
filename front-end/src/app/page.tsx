@@ -25,9 +25,8 @@ const Home: React.FC = () => {
                 <Navbar />
             </section>
 
-            {/* Viewing Area - Introduction */}
+            {/* Home */}
             <section id='home' className=" min-h-screen flex flex-col items-center justify-center">
-
                 <motion.div
                     className="bg-gr sticky top-0"
                     initial={{ opacity: 0, y: -50 }}
@@ -70,13 +69,25 @@ const Home: React.FC = () => {
                             </svg>
                         </motion.a>
                         <motion.a
-                            href="mailto:saurabh@example.com"
-                            aria-label="Email"
+                            href="mailto:saurabh.takle@gmail.com"
+                            aria-label="Gmail"
                             whileHover={{ scale: 1.2 }}
                             className="text-white hover:text-red-500"
                         >
-                            <svg className="w-8 h-8 fill-current" viewBox="0 0 24 24">
-                            <path d="M12 12.713l11.985-8.713v17h-23.97v-17l11.985 8.713zm11.985-10.713v.027l-11.985 8.717-11.985-8.717v-.027c0-1.115.892-2 1.985-2h19.99c1.092 0 1.985.885 1.985 2z"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" className="w-8 h-8 fill-current">
+                            <path d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z"></path>
+                            </svg>
+                        </motion.a>
+                        <motion.a
+                            href="https://public.tableau.com/app/profile/saurabh.takle/vizzes"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                            whileHover={{ scale: 1.2 }}
+                            className="text-white hover:text-gray-500"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" className="w-8 h-8 fill-current">
+                            <path d="M 23.5 0 L 23.5 4.5 L 19.5 4.5 L 19.5 6.5 L 23.5 6.5 L 23.5 11 L 25.5 11 L 25.5 6.5 L 29.5 6.5 L 29.5 4.5 L 25.5 4.5 L 25.5 0 L 23.5 0 z M 11 5 L 11 11 L 5 11 L 5 13 L 11 13 L 11 19 L 13 19 L 13 13 L 19 13 L 19 11 L 13 11 L 13 5 L 11 5 z M 36 5 L 36 11 L 30 11 L 30 13 L 36 13 L 36 19 L 38 19 L 38 13 L 44 13 L 44 11 L 38 11 L 38 5 L 36 5 z M 23 16 L 23 23 L 16 23 L 16 26 L 23 26 L 23 33 L 26 33 L 26 26 L 33 26 L 33 23 L 26 23 L 26 16 L 23 16 z M 5 19 L 5 23.5 L 1 23.5 L 1 25.5 L 5 25.5 L 5 30 L 7 30 L 7 25.5 L 11 25.5 L 11 23.5 L 7 23.5 L 7 19 L 5 19 z M 43 19 L 43 23.5 L 39 23.5 L 39 25.5 L 43 25.5 L 43 30 L 45 30 L 45 25.5 L 49 25.5 L 49 23.5 L 45 23.5 L 45 19 L 43 19 z M 11 29 L 11 35 L 5 35 L 5 37 L 11 37 L 11 43 L 13 43 L 13 37 L 19 37 L 19 35 L 13 35 L 13 29 L 11 29 z M 36 29 L 36 35 L 30 35 L 30 37 L 36 37 L 36 43 L 38 43 L 38 37 L 44 37 L 44 35 L 38 35 L 38 29 L 36 29 z M 23.5 38 L 23.5 42.5 L 19.5 42.5 L 19.5 44.5 L 23.5 44.5 L 23.5 49 L 25.5 49 L 25.5 44.5 L 29.5 44.5 L 29.5 42.5 L 25.5 42.5 L 25.5 38 L 23.5 38 z"></path>
                             </svg>
                         </motion.a>
                     </div>
