@@ -17,7 +17,7 @@ const projectList: Project[] = [
     { 
         id: 1, 
         title: "Personalized Product Recommendation System", 
-        description: "A recommendation system built with collaborative filtering using the Amazon Fine Food Reviews dataset.",
+        description: "Recommends products to users by mining purchase and rating patterns in the Amazon Fine Food Reviews dataset with collaborative filtering.",
         image: "/images/project1.webp",
         technologies: ["Python", "Collaborative Filtering", "Pandas", "NumPy", "Scikit-Learn"],
         githubLink: "https://github.com/saurabh-takle/personalized-product-recommendation"
@@ -25,7 +25,7 @@ const projectList: Project[] = [
     { 
         id: 2, 
         title: "Finger Joint Detection for Osteoarthritis Analysis", 
-        description: "X-ray image processing using YOLO for osteoarthritis analysis.",
+        description: "Detects and localizes finger joints in X-ray images with a custom-trained YOLO model to support automated osteoarthritis screening.",
         image: "/images/project2.jpg",
         technologies: ["Python", "YOLO", "Image Processing", "MATLAB", "Deep Learning"],
         githubLink: "https://github.com/saurabh-takle/"
@@ -33,7 +33,7 @@ const projectList: Project[] = [
     { 
         id: 3, 
         title: "Data Analysis Pipeline", 
-        description: "End-to-end data pipeline for analyzing healthcare datasets.",
+        description: "Cleans, transforms, and visualizes raw healthcare records through an end-to-end ETL pipeline to surface trends for analysis.",
         image: "/images/project3.png",
         technologies: ["Python", "ETL", "SQL", "Data Visualization", "Pandas"],
         githubLink: "https://github.com/saurabh-takle/Cloud-Computing"

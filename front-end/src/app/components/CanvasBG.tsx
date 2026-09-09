@@ -28,6 +28,9 @@ const CanvasBG: React.FC = () => {
     useEffect(() => {
         if (typeof window === 'undefined') return; // Prevents code from running on the server
 
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (prefersReducedMotion) return; // Skip the animated background entirely for users who asked for less motion
+
         const canvas = canvasRef.current!;
         const ctx = canvas.getContext('2d')!;
         

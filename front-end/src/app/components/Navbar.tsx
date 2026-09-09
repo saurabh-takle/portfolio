@@ -50,7 +50,9 @@ const Navbar: React.FC = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="fixed right-4 top-1/2 transform -translate-y-1/2 flex flex-col items-center space-y-4 z-20"
+            className="fixed bottom-4 left-1/2 -translate-x-1/2 flex flex-row space-x-2
+                       md:bottom-auto md:left-auto md:right-4 md:top-1/2 md:translate-x-0 md:-translate-y-1/2 md:flex-col md:items-center md:space-x-0 md:space-y-4
+                       items-center z-20"
         >
             {links.map((link) => (
                 <Link
@@ -61,7 +63,7 @@ const Navbar: React.FC = () => {
                     spy={true}
                     offset={-100}
                     onSetActive={() => setActiveSection(link.href)}
-                    className={`relative text-sm text-[#171717] bg-[url('/brush.svg')] cursor-pointer py-2 px-4 transition-all duration-300 
+                    className={`relative text-xs md:text-sm text-[#171717] bg-[url('/brush.svg')] cursor-pointer py-2 px-3 md:px-4 transition-all duration-300 whitespace-nowrap
                         ${activeSection === link.href ? "text-blue-500 font-bold" : "hover:text-blue-400"}`}
                 >
                     {activeSection === link.href && (

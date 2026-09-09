@@ -12,7 +12,7 @@ const DownloadResume: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="fixed bottom-4 right-4"
+            className="fixed top-4 right-4 md:top-auto md:bottom-4"
         >
             <motion.a 
                 href="/SaurabhTakleResume.pdf" 
